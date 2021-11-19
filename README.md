@@ -53,4 +53,6 @@
 
 ##### Ping Pong Images: [Google Search](http://www.google.com)
 
+##### Keycode Cheat Sheet: [Key Codes](https://css-tricks.com/snippets/javascript/javascript-keycodes)
+
 ---
