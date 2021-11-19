@@ -1,12 +1,16 @@
 //get key events
-const getKeyPress = (e) => {
-  if (e.keyCode === '38') {
-    // up arrow key press
-    console.log('im the up key');
-  } else if (e.keyCode === '40') {
-    // down arrow key press
-    console.log('im the down key');
-  }
-};
+function getKeyPress(e) {
+  let key = e.keyCode;
+  switch (key) {
+    case '38':
+      ///
+      break;
 
-document.addEventListener('keyPress', getKeyPress());
+    case 40:
+      ///
+      break;
+  }
+  console.log(key);
+}
+
+document.addEventListener('keyup' || 'keydown', getKeyPress);
