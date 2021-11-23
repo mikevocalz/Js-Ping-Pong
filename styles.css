@@ -135,3 +135,25 @@ h2 {
   width: 135px;
   text-align: center;
 }
+
+h1 {
+  font: bold 24px Sans-Serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #369;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 250px 0 10px 0;
+  line-height: 24px;
+  border-radius: 15px;
+  /* transform-origin: 0 0; */
+
+  width: 135px;
+  text-align: center;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
