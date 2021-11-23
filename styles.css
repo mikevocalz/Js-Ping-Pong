@@ -33,8 +33,6 @@ body {
   border-bottom-left-radius: 20px;
   box-shadow: 3px 6px #cc0000;
   background-color: #ff0000;
-  top: 400px;
-  right: 435px !important;
   position: absolute;
   /* animation: 25s linear infinite backAndForth; */
 }
@@ -44,8 +42,8 @@ body {
   border-bottom-right-radius: 20px;
   box-shadow: -3px -6px #b3a125;
   background-color: #ffde00;
-  top: 135px;
-  left: 270px !important;
+  position: absolute;
+
   /* animation: 25s linear infinite forthAndBack; */
 }
 
@@ -60,7 +58,6 @@ body {
   top: 25vh;
   left: 48vw;
   animation: ballAnim 0.7s linear infinite;
-
   z-index: 10;
   position: fixed;
   height: 35px;

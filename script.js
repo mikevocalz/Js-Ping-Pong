@@ -17,7 +17,13 @@ console.log('hey board', gameBoard.getBoundingClientRect());
 
 //paddles
 let p1 = document.querySelector('.left');
+console.log('im p1', p1);
+p1.style.top = '100px';
+p1.style.left = '165px';
+
 let p2 = document.querySelector('.right');
+p2.style.top = '250px';
+p2.style.right = '150px';
 //scores
 let p1Score = (document.getElementById('p1s').innerText = 00);
 let p2Score = (document.getElementById('p2s').innerText = 00);
