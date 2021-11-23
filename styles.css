@@ -34,7 +34,7 @@ body {
   box-shadow: 3px 6px #cc0000;
   background-color: #ff0000;
   top: 400px;
-  right: 270px;
+  right: calc(800px - 20px);
   animation: 25s linear infinite backAndForth;
 }
 
@@ -63,7 +63,7 @@ body {
   } */
 
   100% {
-    transform: translateY(3000%);
+    transform: translateY(2000%);
   }
 }
 
@@ -82,7 +82,7 @@ body {
   } */
 
   100% {
-    transform: translateY(-3000%);
+    transform: translateY(-2000%);
   }
 }
 
@@ -175,8 +175,8 @@ aside {
   height: 170px;
   width: 100vw;
   background-image: url('./btmbrder.png');
-  border-image-repeat: repeat-x;
-  border-image-slice: 40;
+  border-image-repeat: stretch repeat;
+  border-image-slice: 40 fill;
 }
 
 span {
