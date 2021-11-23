@@ -10,7 +10,10 @@ ball.addEventListener('click', (e) => {
 document.addEventListener('keyup' || 'keydown', getKeyPress, true);
 
 ///game booard
-let gameBoard = document.querySelector('.board');
+let gameBoard = document.getElementById('board');
+
+//log the coords to get the x,y positions of the board, it returns an obj with values
+console.log('hey board', gameBoard.getBoundingClientRect());
 
 //paddles
 let p1 = document.querySelector('.left');

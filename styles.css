@@ -49,49 +49,7 @@ body {
   /* animation: 25s linear infinite forthAndBack; */
 }
 
-@keyframes backAndForth {
-  /* 10% {
-    transform: translateY(0);
-  } */
-
-  /* 25% {
-    transform: translateY(400%);
-  }
-   */
-
-  /* 75% {
-    transform: rotate(360deg);
-  } */
-
-  100% {
-    transform: translateY(2000%);
-  }
-}
-
-@keyframes forthAndBack {
-  /* 10% {
-    transform: translateY(0);
-  } */
-
-  /* 25% {
-    transform: translateY(400%);
-  }
-   */
-
-  /* 75% {
-    transform: rotate(360deg);
-  } */
-
-  100% {
-    transform: translateY(-2000%);
-  }
-}
-
 @keyframes ballAnim {
-  10% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-  }
   100% {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
@@ -101,7 +59,8 @@ body {
   /* animation: 10s linear infinite backAndForth; */
   top: 25vh;
   left: 48vw;
-  transform: rotate(360deg);
+  animation: ballAnim 0.7s linear infinite;
+
   z-index: 10;
   position: fixed;
   height: 35px;
@@ -113,7 +72,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url('https://e7.pngegg.com/pngimages/993/363/png-clipart-pokeball-pokeball.png');
-  animation: ballAnim 5s linear infinite;
 }
 
 #center {
