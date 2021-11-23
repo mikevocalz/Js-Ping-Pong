@@ -6,6 +6,9 @@ ball.addEventListener('click', (e) => {
 
 document.addEventListener('keyup' || 'keydown', getKeyPress, true);
 
+let p1Score = (document.getElementById('p1s').innerText = 00);
+let p2Score = (document.getElementById('p2s').innerText = 00);
+
 let player1Score = 0;
 let player2Score = 0;
 let ballVelX = 10;

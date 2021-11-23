@@ -34,7 +34,7 @@ body {
   box-shadow: 3px 6px #cc0000;
   background-color: #ff0000;
   top: 400px;
-  right: 325px;
+  right: 270px;
   animation: 25s linear infinite backAndForth;
 }
 
@@ -44,7 +44,7 @@ body {
   box-shadow: -3px -6px #b3a125;
   background-color: #ffde00;
   top: 135px;
-  left: 325px;
+  left: 270px;
   animation: 25s linear infinite forthAndBack;
 }
 
@@ -142,9 +142,9 @@ h1 {
   text-transform: uppercase;
   background: #369;
   color: #fff;
-  padding: 5px 10px;
+  padding: 30px 20px;
   margin: 250px 0 10px 0;
-  line-height: 24px;
+  line-height: 40px;
   border-radius: 15px;
   /* transform-origin: 0 0; */
 
@@ -156,4 +156,32 @@ aside {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+#btmBorderImg {
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  width: 300px;
+  z-index: 100;
+}
+#btmBorder {
+  margin-top: 20px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  height: 170px;
+  width: 100vw;
+  background-image: url('./btmbrder.png');
+  border-image-repeat: repeat-x;
+  border-image-slice: 40;
+}
+
+span {
+  color: #b3a125;
+  font-weight: bold;
+  font-size: 44px;
+  margin-top: 20px;
 }
