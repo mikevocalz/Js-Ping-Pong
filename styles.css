@@ -5,6 +5,7 @@ body {
 }
 
 #board {
+  position: relative;
   display: flex;
   background-color: #000;
   border-radius: 30px;
@@ -24,30 +25,99 @@ body {
 #paddles {
   height: 120px;
   width: 20px;
+  position: fixed;
 }
-.left {
+
+.right {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 3px 6px #cc0000;
   background-color: #ff0000;
+  top: 400px;
+  right: 325px;
+  animation: 25s linear infinite backAndForth;
 }
 
-.right {
+.left {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: -3px -6px #b3a125;
   background-color: #ffde00;
+  top: 135px;
+  left: 325px;
+  animation: 25s linear infinite forthAndBack;
 }
 
+@keyframes backAndForth {
+  /* 10% {
+    transform: translateY(0);
+  } */
+
+  /* 25% {
+    transform: translateY(400%);
+  }
+   */
+
+  /* 75% {
+    transform: rotate(360deg);
+  } */
+
+  100% {
+    transform: translateY(3000%);
+  }
+}
+
+@keyframes forthAndBack {
+  /* 10% {
+    transform: translateY(0);
+  } */
+
+  /* 25% {
+    transform: translateY(400%);
+  }
+   */
+
+  /* 75% {
+    transform: rotate(360deg);
+  } */
+
+  100% {
+    transform: translateY(-3000%);
+  }
+}
+
+@keyframes ballAnim {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #ball {
+  /* animation: 10s linear infinite backAndForth; */
+  top: 35%;
+  left: 49%;
+  transform: rotate(360deg);
+  z-index: 10;
+  position: fixed;
   height: 35px;
   width: 35px;
   border-radius: 25px;
+  text-align: center;
   background-color: ghostwhite;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url('https://e7.pngegg.com/pngimages/993/363/png-clipart-pokeball-pokeball.png');
+  animation: ballAnim 1s linear infinite;
+}
+
+#center {
+  border: 3px dotted #5ca904;
+  color: #fff;
+  background-color: #2d5a27;
+  height: 97%;
+  position: absolute;
+  top: 0;
+  left: 50%;
 }
 
 h2 {
@@ -57,9 +127,11 @@ h2 {
   background: #369;
   color: #fff;
   padding: 5px 10px;
-  margin: 0 0 10px 0;
+  margin: 250px 0 10px 0;
   line-height: 24px;
   border-radius: 15px;
   /* transform-origin: 0 0; */
   transform: rotate(90deg);
+  width: 135px;
+  text-align: center;
 }
