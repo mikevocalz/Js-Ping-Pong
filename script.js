@@ -16,14 +16,20 @@ let gameBoard = document.getElementById('board');
 console.log('hey board', gameBoard.getBoundingClientRect());
 
 //paddles
-let p1 = document.querySelector('.left');
+let p1 = document.getElementById('left');
+
 console.log('im p1', p1);
-p1.style.top = '100px';
-p1.style.left = '165px';
+
+let t = p1.style;
+console.log('im t', t);
+// p1.style.left = gameBoard.right;
 
 let p2 = document.querySelector('.right');
-p2.style.top = '250px';
-p2.style.right = '150px';
+console.log('im p2', p2, gameBoard.top);
+
+p2.style.top = gameBoard.top + 50 + 'px';
+p2.style.right = gameBoard.left - '50px';
+
 //scores
 let p1Score = (document.getElementById('p1s').innerText = 00);
 let p2Score = (document.getElementById('p2s').innerText = 00);

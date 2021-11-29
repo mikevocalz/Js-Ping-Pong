@@ -8,12 +8,12 @@ body {
 }
 
 #board {
-  /* position: absolute; */
-  display: flex;
+  position: relative;
+  margin: 0 auto;
   background-color: #000;
   border-radius: 30px;
-  height: 50vh;
-  width: 70vw;
+  height: 500px;
+  width: 700px;
   overflow: hidden;
   background-position: center;
   background-repeat: repeat;
@@ -25,7 +25,9 @@ body {
 #paddles {
   height: 120px;
   width: 20px;
-  position: fixed;
+  position: absolute;
+  left: 5px;
+  top: 180px;
 }
 
 .right {
@@ -33,8 +35,6 @@ body {
   border-bottom-left-radius: 20px;
   box-shadow: 3px 6px #cc0000;
   background-color: #ff0000;
-  position: absolute;
-  /* animation: 25s linear infinite backAndForth; */
 }
 
 .left {
@@ -42,9 +42,7 @@ body {
   border-bottom-right-radius: 20px;
   box-shadow: -3px -6px #b3a125;
   background-color: #ffde00;
-  position: absolute;
-
-  /* animation: 25s linear infinite forthAndBack; */
+  margin-left: 670px;
 }
 
 @keyframes ballAnim {
@@ -55,11 +53,11 @@ body {
 }
 #ball {
   /* animation: 10s linear infinite backAndForth; */
-  top: 25vh;
-  left: 48vw;
+  position: absolute;
+  top: 240px;
+  left: 335px;
   animation: ballAnim 0.7s linear infinite;
   z-index: 10;
-  position: fixed;
   height: 35px;
   width: 35px;
   border-radius: 25px;
@@ -75,9 +73,8 @@ body {
   border: 3px dotted #5ca904;
   color: #fff;
   background-color: #2d5a27;
-  height: 50vh;
+  height: 500px;
   position: absolute;
-  top: 2px;
   left: 50%;
 }
 
