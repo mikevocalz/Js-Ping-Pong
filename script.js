@@ -7,8 +7,6 @@ ball.addEventListener('click', (e) => {
   console.log('im clicked');
 });
 
-document.addEventListener('keyup' || 'keydown', getKeyPress, true);
-
 ///game booard
 let gameBoard = document.getElementById('board');
 
@@ -33,16 +31,28 @@ p2.style.right = gameBoard.left - '50px';
 //scores
 let p1Score = (document.getElementById('p1s').innerText = 00);
 let p2Score = (document.getElementById('p2s').innerText = 00);
-
-//set velocity
-let ballVelX = 10;
-let ballVelY = 5;
-
 //ball coords
-let ballX = 900 / 2; //divide board in half to get X coords
-let ballY = 460 / 2; //divide board in half to get Y coords
+let posX = Math.random() * 3 + 9;
+let posY = Math.random() * 2 +
+//set velocity
+let posXd = Math.random() * 3;
+let posYd = Math.random() * 5;
+ 7;
 //set initial game state
-let gameState = false;
+let gameState = 'start';
+
+let board = document.querySelector('.board');
+
+let initial_ball = document.querySelector('.ball');
+let ball = document.querySelector('.ball');
+
+let message = document.querySelector('.message');
+let p1Coords = p1.getBoundingClientRect();
+let p2Coords = p2.getBoundingClientRect();
+let initialBallCoords = ball.getBoundingClientRect();
+let ballCoords = initialBallCoords;
+let boardCoords = board.getBoundingClientRect();
+let paddlePos = document.querySelector('.paddle').getBoundingClientRect();
 
 //get key events
 function getKeyPress(e) {
@@ -61,3 +71,5 @@ function getKeyPress(e) {
   }
   console.log(key);
 }
+
+
